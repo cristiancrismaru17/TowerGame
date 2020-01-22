@@ -14,7 +14,6 @@ public class Target : MonoBehaviour
     [Header("Audio")]
     public RandomPlayer HitPlayer;
     public AudioSource IdleSource;
-    
     public bool Destroyed => m_Destroyed;
 
     bool m_Destroyed = false;
