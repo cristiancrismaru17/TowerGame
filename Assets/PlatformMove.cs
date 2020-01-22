@@ -14,15 +14,18 @@ public class PlatformMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (velocity + accel >= maxVelocity)
+        if (GameSystem.Instance.m_TimerRunning)
         {
-            velocity = maxVelocity;
-            accel = 0f;
+            if (velocity + accel >= maxVelocity)
+            {
+                velocity = maxVelocity;
+                accel = 0f;
+            }
+            else
+            {
+                velocity += accel;
+            }
+            transform.Translate(0, velocity * Time.deltaTime, 0);
         }
-        else
-        {
-            velocity += accel;
-        }
-        transform.Translate(0, velocity * Time.deltaTime, 0);
     }
 }

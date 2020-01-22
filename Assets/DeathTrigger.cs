@@ -10,7 +10,9 @@ public class DeathTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            EditorApplication.isPaused = true;
+            GameSystem.Instance.StopTimer();
+            GameSystem.Instance.FinishRun();
+            Destroy(gameObject);
         }
     }
 }

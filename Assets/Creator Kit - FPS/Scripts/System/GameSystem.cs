@@ -25,8 +25,9 @@ public class GameSystem : MonoBehaviour
     public int DestroyedTarget => m_TargetDestroyed;
     public int Score => m_Score;
 
+    public bool m_TimerRunning = false;
+
     float m_Timer;
-    bool m_TimerRunning = false;
     
     int m_TargetCount;
     int m_TargetDestroyed;

@@ -108,6 +108,7 @@
     <Compile Include="Assets\Creator Kit - FPS\Scripts\UI\RestartLevel.cs" />
     <Compile Include="Assets\Creator Kit - FPS\Scripts\UI\WeaponInfoUI.cs" />
     <Compile Include="Assets\DeathTrigger.cs" />
+    <Compile Include="Assets\GameOver.cs" />
     <Compile Include="Assets\GivePoint.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\DebrisScript.cs" />
     <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Demo_Scene_Components\Scripts\ExplosiveBarrelScript.cs" />
